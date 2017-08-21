@@ -18,7 +18,7 @@ Table of contents
 # The Issue
 From what Facebook's lawyers are saying to their engineers who ask all of their open-source projects require their BSD+Patents License which, in Facebook's reasoning, this is meant to be a defense from people suring Facebook for patents. While this is an "old idea" for lawyers the result of introducing this again in the open-source community comes off as tone deaf of the original goal of open-source. Here is a technology lawyer's response to another technology lawyer who believes this isn't a huge issue.
 
-``
+```
 I'm also a technology lawyer, i've written several of the patent grants used very widely, as well as having been responsible for open source licensing compliance at Google for a very long time .
 If i thought this license would actually help i would support it in an instant. But so far
 1. i don't believe it would. It's a very old idea, discussed to death, with a lot of downside, and a little upside.
