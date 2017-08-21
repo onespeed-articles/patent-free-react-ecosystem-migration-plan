@@ -1,4 +1,4 @@
-# How to migrate from React.js to Preact.js
+# How to migrate from React.js
 
 Due to recent news, you or your company might consider moving away from React.js or any technology under Facebook’s BSD+Patents License. If you plan to or if you're trying to determine the scope of the migration we provided a table of contents to determine what you need to know.
 
