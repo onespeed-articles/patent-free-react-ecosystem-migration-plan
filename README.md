@@ -9,8 +9,8 @@ Table of contents
   * [Effected Tech](#effected-tech)
     * [React to Preact](#react-to-preact)
     * [React to Vue](#react-to-vue)
-    * [React to Angular](##react-to-angular)
-    * [Flow to TypeScript](#flow-typescript)
+    * [React to Angular](#react-to-angular)
+    * [Flow to TypeScript](#flow-to-typescript)
     * [Jest to Mocha, Chai](#jest-to-mocha-chai)
     * [create-react-app](#create-react-app)
   * [Need help?](#need-help)
@@ -41,3 +41,16 @@ If any of this scares you (and it should) you're probably thinking about migrati
 Facebook's open-source is pretty vast covering everything from UI frameworks to creating their own language. We're going to focus in on four technologies: `React`, `Flow`, `Jest`, and `create-react-app`.
 
 
+# React to Preact
+
+* [Switching to Preact (from React)](https://preactjs.com/guide/switching-to-preact)
+* [Using Preact Instead Of React](https://medium.com/@rajaraodv/using-preact-instead-of-react-70f40f53107c)
+* [Differences to React](https://github.com/developit/preact/wiki/Differences-to-React)
+
+# React to Vue
+# React to Angular
+# Flow to TypeScript
+# Jest to Mocha, Chai
+# create-react-app
+
+# Need help?
