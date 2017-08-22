@@ -12,6 +12,7 @@ Table of contents
     * [React to Angular](##react-to-angular)
     * [Flow to TypeScript](#flow-typescript)
     * [Jest to Mocha, Chai](#jest-to-mocha-chai)
+    * [create-react-app](#create-react-app)
   * [Need help?](#need-help)
 
 
@@ -35,4 +36,8 @@ Rather than come to a community of license authors, etc, and say "hey, we want t
 ```
 
 If any of this scares you (and it should) you're probably thinking about migrating. Don't worry I got you covered with the best migration paths.
+
+# Effected Tech
+Facebook's open-source is pretty vast covering everything from UI frameworks to creating their own language. We're going to focus in on four technologies: `React`, `Flow`, `Jest`, and `create-react-app`.
+
 
