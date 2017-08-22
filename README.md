@@ -50,8 +50,8 @@ The quickest way to migrate out of React is to move to Preact and their helper p
 * [Differences to React](https://github.com/developit/preact/wiki/Differences-to-React)
 
 # React to Vue
-[Switching From React To Vue.js](https://vuejsdevelopers.com/2017/05/28/switch-from-react-to-vue-js/)
-[(Vue) Comparison with Other Frameworks](https://vuejs.org/v2/guide/comparison.html)
+* [Switching From React To Vue.js](https://vuejsdevelopers.com/2017/05/28/switch-from-react-to-vue-js/)
+* [(Vue) Comparison with Other Frameworks](https://vuejs.org/v2/guide/comparison.html)
 
 # React to Angular
 There aren't any resources online for migration from React to Angular. If you're interested in this you can contact us at patrick@onespeed.io and we can help your project migrate over to Angular
@@ -64,9 +64,10 @@ There aren't any resources online for migration from React to Angular. If you're
 There aren't any resources online for migration from Jest to Mocha, Chai. If you're interested in this you can contact us at patrick@onespeed.io and we can help your project migrate over to Mocha, Chai
 
 # create-react-app
-[preact-cli](https://github.com/developit/preact-cli)
-[vue-cli](https://github.com/vuejs/vue-cli)
-[angular-cli](https://github.com/angular/angular-cli)
+A great way to initially create your project is using a CLI since it allows you to focus on your application code rather than learning your build setup. 
+* [preact-cli](https://github.com/developit/preact-cli)
+* [vue-cli](https://github.com/vuejs/vue-cli)
+* [angular-cli](https://github.com/angular/angular-cli)
 
 # Need help?
 If you or your company needs help with migrate we offer migration services ranging from code-reviews to us handling the full migration of your app to any of other technology that fits your needs. We also provide training for your team to jump in the new code base to quickly be production. 
