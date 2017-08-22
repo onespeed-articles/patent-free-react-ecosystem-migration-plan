@@ -42,12 +42,16 @@ Facebook's open-source is pretty vast covering everything from UI frameworks to 
 
 
 # React to Preact
+The quickest way to migrate out of React is to move to Preact and their helper package called [`preact-compat`](https://github.com/developit/preact-compat). 
+
 * [bye-react: one line CLI to migrate from React to Preact](https://github.com/colinmcd94/bye-react)
 * [Switching to Preact (from React)](https://preactjs.com/guide/switching-to-preact)
 * [Using Preact Instead Of React](https://medium.com/@rajaraodv/using-preact-instead-of-react-70f40f53107c)
 * [Differences to React](https://github.com/developit/preact/wiki/Differences-to-React)
 
 # React to Vue
+[Switching From React To Vue.js](https://vuejsdevelopers.com/2017/05/28/switch-from-react-to-vue-js/)
+[(Vue) Comparison with Other Frameworks](https://vuejs.org/v2/guide/comparison.html)
 
 # React to Angular
 There aren't any resources online for migration from React to Angular. If you're interested in this you can contact us at patrick@onespeed.io and we can help your project migrate over to Angular
@@ -57,7 +61,7 @@ There aren't any resources online for migration from React to Angular. If you're
 [TypeScript vs Flow](https://github.com/niieani/typescript-vs-flowtype)
 
 # Jest to Mocha, Chai
-There aren't any resources online for migration from Jest to Mocha, Chai. If you're interested in this you can contact us at patrick@onespeed.io and we can help your project migrate over to Angular
+There aren't any resources online for migration from Jest to Mocha, Chai. If you're interested in this you can contact us at patrick@onespeed.io and we can help your project migrate over to Mocha, Chai
 
 # create-react-app
 [preact-cli](https://github.com/developit/preact-cli)
