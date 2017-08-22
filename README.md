@@ -42,7 +42,7 @@ Facebook's open-source is pretty vast covering everything from UI frameworks to 
 
 
 # React to Preact
-
+* [bye-react: one line CLI to migrate from React to Preact](https://github.com/colinmcd94/bye-react)
 * [Switching to Preact (from React)](https://preactjs.com/guide/switching-to-preact)
 * [Using Preact Instead Of React](https://medium.com/@rajaraodv/using-preact-instead-of-react-70f40f53107c)
 * [Differences to React](https://github.com/developit/preact/wiki/Differences-to-React)
@@ -50,8 +50,19 @@ Facebook's open-source is pretty vast covering everything from UI frameworks to 
 # React to Vue
 
 # React to Angular
+There aren't any resources online for migration from React to Angular. If you're interested in this you can contact us at patrick@onespeed.io and we can help your project migrate over to Angular
+
 # Flow to TypeScript
+[Migrating from Flow to Typescript](https://medium.com/@ckoster22/migrating-from-flow-to-typescript-b065796797db)
+[TypeScript vs Flow](https://github.com/niieani/typescript-vs-flowtype)
+
 # Jest to Mocha, Chai
+There aren't any resources online for migration from Jest to Mocha, Chai. If you're interested in this you can contact us at patrick@onespeed.io and we can help your project migrate over to Angular
+
 # create-react-app
+[preact-cli](https://github.com/developit/preact-cli)
+[vue-cli](https://github.com/vuejs/vue-cli)
+[angular-cli](https://github.com/angular/angular-cli)
 
 # Need help?
+If you or your company needs help with migrate we offer migration services ranging from code-reviews to us handling the full migration of your app to any of other technology that fits your needs. We also provide training for your team to jump in the new code base to quickly be production. 
