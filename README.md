@@ -11,7 +11,7 @@ Table of contents
     * [React to Vue](#react-to-vue)
     * [React to Angular](#react-to-angular)
     * [Flow to TypeScript](#flow-to-typescript)
-    * [Jest to Mocha, Chai](#jest-to-mocha-chai)
+    * [Jest to Mocha, Chai, Sinon](#jest-to-mocha-chai-sinon)
     * [create-react-app](#create-react-app)
   * [Need help?](#need-help)
 
@@ -57,7 +57,12 @@ Resources:
 * [(Vue) Comparison with Other Frameworks](https://vuejs.org/v2/guide/comparison.html)
 
 # React to Angular
-There aren't any resources online for migration from React to Angular. If you're interested in this you can contact us at patrick@onespeed.io and we can help your project migrate over to Angular
+When migrating to Angular from React there are a lot of differences that you need to be aware of. While some of the concepts of React are there with Angular there are just different architectural. Here's a quick list of differences.
+
+* bootstrapping
+While in React this is as simple as importing a render function from react-dom in Angular we need to import not only the browser version of bootstrap but configure an internal runtime. Your main file for starting your framework is going to be completely different when switching.
+* storing state
+Both frameworks
 
 # Flow to TypeScript
 
