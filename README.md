@@ -38,7 +38,7 @@ Rather than come to a community of license authors, etc, and say "hey, we want t
 If any of this scares you (and it should) you're probably thinking about migrating. Don't worry I got you covered with the best migration paths.
 
 # Effected Tech
-Facebook's open-source is pretty vast covering everything from UI frameworks to creating their own language. We're going to focus in on four technologies: `React`, `Flow`, `Jest`, and `create-react-app`.
+Facebook's open-source is pretty vast covering everything from UI frameworks to creating their own language. We're going to focus in on four technologies: `React`, `Flow`, `Jest`, and `create-react-app`. 
 
 
 # React to Preact
@@ -50,6 +50,7 @@ The quickest way to migrate out of React is to move to Preact and their helper p
 * [Differences to React](https://github.com/developit/preact/wiki/Differences-to-React)
 
 # React to Vue
+Unlike React Vue is a full framework offering a router, state solution, and even scoped styles out the box. 
 * [Switching From React To Vue.js](https://vuejsdevelopers.com/2017/05/28/switch-from-react-to-vue-js/)
 * [(Vue) Comparison with Other Frameworks](https://vuejs.org/v2/guide/comparison.html)
 
@@ -60,8 +61,11 @@ There aren't any resources online for migration from React to Angular. If you're
 [Migrating from Flow to Typescript](https://medium.com/@ckoster22/migrating-from-flow-to-typescript-b065796797db)
 [TypeScript vs Flow](https://github.com/niieani/typescript-vs-flowtype)
 
-# Jest to Mocha, Chai
-There aren't any resources online for migration from Jest to Mocha, Chai. If you're interested in this you can contact us at patrick@onespeed.io and we can help your project migrate over to Mocha, Chai
+# Jest to Mocha, Chai, Sinon
+If you're using Jest it should be straight forward to switch to Mocha. Mocha is very flexibility by design but the downside is that it requires more configuration. One configuration is having to choose an assertion library such as Chai and Sinon for mocking. Another benefit of switching to Mocha is the community and large support with videos, blog posts, and libraries. Mocha also providers snapshot testing as yet another integration with either `snap-shot` on npm. With Mocha there will be a lot configuration initially but once you're all set and ready your workflow would be better off due to the community support.
+
+resources:
+[React Testing – Jest or Mocha?](https://spin.atomicobject.com/2017/05/02/react-testing-jest-vs-mocha/)
 
 # create-react-app
 A great way to initially create your project is using a CLI since it allows you to focus on your application code rather than learning your build setup. 
