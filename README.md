@@ -54,6 +54,8 @@ Going from zero to hello-world may seem daunting due to decision fatigue. This C
 
 
 # React to Preact
+<img width="699" alt="screen shot 2017-08-25 at 2 38 20 pm" src="https://user-images.githubusercontent.com/1016365/29733688-3a889c1c-89a3-11e7-86e0-2a73ce8c8c50.png">
+
 The quickest way to migrate out of React is to move to Preact and their helper package called [`preact-compat`](https://github.com/developit/preact-compat). Preact also provides the good parts of React's API without the overhead or bloat of the framework that never really changed after it's release. Building on these ideas, Preact was able to excel on areas such as higher progressive web application score using lighthouse. also has better support for web components compared to React. Other differences also include server-side rendering and performence which is better in Preact than the original. 
 
 ## Why
@@ -85,6 +87,8 @@ There are two more methods in this [guide provided by Preact](https://preactjs.c
 * [Differences to React](https://github.com/developit/preact/wiki/Differences-to-React)
 
 # React to Vue
+<img width="857" alt="screen shot 2017-08-25 at 2 38 43 pm" src="https://user-images.githubusercontent.com/1016365/29733704-5371e116-89a3-11e7-941a-5a96ca81b3a7.png">
+
 Unlike React Vue is a full framework offering a router, state solution, and even scoped styles out the box. 
 
 ## Why
@@ -94,6 +98,8 @@ Resources:
 * [(Vue) Comparison with Other Frameworks](https://vuejs.org/v2/guide/comparison.html)
 
 # React to Angular
+<img width="815" alt="screen shot 2017-08-25 at 2 38 34 pm" src="https://user-images.githubusercontent.com/1016365/29733693-442bba1a-89a3-11e7-95de-4cafc89974eb.png">
+
 When migrating to Angular from React there are a lot of differences that you need to be aware of. While some of the concepts of React are there with Angular there are just different architectural. Here's a quick list of differences.
 
 ## Why
@@ -106,12 +112,16 @@ While in React this is as simple as importing a render function from react-dom i
 Both frameworks
 
 # Flow to TypeScript
+<img width="892" alt="screen shot 2017-08-25 at 2 51 23 pm" src="https://user-images.githubusercontent.com/1016365/29734050-060b35e2-89a5-11e7-8b07-5318bcc530fd.png">
+
 
 Resources:
 * [Migrating from Flow to Typescript](https://medium.com/@ckoster22/migrating-from-flow-to-typescript-b065796797db)
 * [TypeScript vs Flow](https://github.com/niieani/typescript-vs-flowtype)
 
 # Jest to Mocha, Chai, Sinon
+<img width="559" alt="screen shot 2017-08-25 at 2 51 55 pm" src="https://user-images.githubusercontent.com/1016365/29734063-10bb26be-89a5-11e7-812b-60e3abecbdd4.png">
+
 If you're using Jest it should be straight forward to switch to Mocha. Mocha is very flexibility by design but the downside is that it requires more configuration. One configuration is having to choose an assertion library such as Chai and Sinon for mocking. Another benefit of switching to Mocha is the community and large support with videos, blog posts, and libraries. Mocha also providers snapshot testing as yet another integration with either `snap-shot-it` on npm. With Mocha there will be a lot configuration initially but once you're all set and ready your workflow would be better off due to the community support.
 
 resources:
@@ -119,6 +129,15 @@ resources:
 
 # create-react-app
 A great way to initially create your project is using a CLI since it allows you to focus on your application code rather than learning your build setup. The main difference between React's CLI compared to others is that the other CLIs have more feature while React's CLI create large documentation around their initial scaffold. 
+
+## preact-cli
+> Start building a Preact Progressive Web App in seconds 🔥
+## vue-cli
+> A simple CLI for scaffolding Vue.js projects.
+## angular-cli
+> CLI for Angular applications based on the ember-cli project.
+
+
 
 Resources:
 * [preact-cli](https://github.com/developit/preact-cli)
