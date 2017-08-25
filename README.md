@@ -108,11 +108,20 @@ When migrating to Angular from React there are a lot of differences that you nee
 * bootstrapping
 While in React this is as simple as importing a render function from react-dom in Angular we need to import not only the browser version of bootstrap but configure an internal runtime. Your main file for starting your framework is going to be completely different when switching.
 
+* props
+In Angular you have props but they're called Inputs and only allow values that doesn't include functions. As with react you're able to use unidirectional data flow in Angular using Inputs.
+
+* prop-types
+In Angular you're most likely using TypeScript which will tell you that you're using the input incorrectly so you won't need runtime type checking as it's in the build system and editor.
+
+* styles
+In React you have to find your own way to manage styles in a way that works with your team. In Angular this is solved by using the browser API to emulate scoped styles as if you're using the Shadow DOM. Rather than having to choose which style library works for you in Angular it's built-in.
+
 * storing state
 Both frameworks allow you to store local state within the component which affects rendering to his child components. Angular also provides you with ways to wire up any stort of store with it's services.
 
 * event handlers
-While in React you have hard coded events in Angular this isn't the case. In Angular you can use the framework's method of wiring up events that will work for any event name. In both frameworks you can also get a refernce of the element to manually wire up the listener.
+While in React you have hard coded events in Angular this isn't the case. In Angular you can use the framework's method of wiring up events that will work for any event name called Outputs. In both frameworks you can also get a refernce of the element to manually wire up the listener.
 
 * state change
 While in React you must use `setState` in order to make sure your changes are reflected in Angular you don't need such a thing. In Angular you simple change the value in your component and the changes are batched and reflected automaticly. Angular uses zone.js to track all asynchronous calls which also helps when doing server-side rendering.
