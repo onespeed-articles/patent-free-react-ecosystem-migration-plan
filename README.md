@@ -63,8 +63,7 @@ The quickest way to migrate out of React is to move to Preact and their helper p
 ## Why
 Preact has a familar API as React using pattern like ES6 classes and Functional Components without anything else like `React.createClass`. At the same time the team behind Preact also provides a helper package for migration from React. Preact is highly optimized focusing in on the key parts that makes React so great. This is why we think Preact is the perfect first choice when moving off of React to an MIT licensed framework.
 
-
-## Switch to Preact is as easy as a CLI
+## Switch to Preact with just one command line
 You can migrate from React to Preact with just one command using [`bye-react`](https://github.com/colinmcd94/bye-react). More specifically, this tool switches the project over to `preact-compat`, the "compatibility layer that makes React-based modules work with Preact, without any code changes".
 
 ```
@@ -104,14 +103,35 @@ Resources:
 
 When migrating to Angular from React there are a lot of differences that you need to be aware of. While some of the concepts of React are there with Angular there are just different architectural. Here's a quick list of differences.
 
-## Why
-
 ## Design Differences
 
 * bootstrapping
 While in React this is as simple as importing a render function from react-dom in Angular we need to import not only the browser version of bootstrap but configure an internal runtime. Your main file for starting your framework is going to be completely different when switching.
+
 * storing state
-Both frameworks
+Both frameworks allow you to store local state within the component which affects rendering to his child components. Angular also provides you with ways to wire up any stort of store with it's services.
+
+* event handlers
+While in React you have hard coded events in Angular this isn't the case. In Angular you can use the framework's method of wiring up events that will work for any event name. In both frameworks you can also get a refernce of the element to manually wire up the listener.
+
+* state change
+While in React you must use `setState` in order to make sure your changes are reflected in Angular you don't need such a thing. In Angular you simple change the value in your component and the changes are batched and reflected automaticly. Angular uses zone.js to track all asynchronous calls which also helps when doing server-side rendering.
+
+* data binding with unidirectional data flow
+Angular allows you to benefit from both one-way data binding as well as two-way data binding without losing out on the benefits of unidirectional data flow. This is one of the best features of Angular as you benefit with the experience from previous patterns without the performance loss.
+
+* refs
+React provides you with escape hatches where possible and Angular does the same with ElementRef. Angular also makes sure to prevent you for getting direct reference to the element can be garbage collected.
+
+* component composition
+Practically the same as React, in Angular you're able to compose many components within each other as well as use content projection. Angular also allows you to use native browser slot API for better interoperability and composition. You can also use native Shadow DOM API to truely encapsulate your component and styles.
+
+* dynamic elements
+In React we're able to use JavaScript for dynamic repeating elements. In Angular we use structural directives to declaratively tell the compiler how to wire up your dynamic elements
+
+## Why
+Angular is the second biggest framework right after React so there is already an established ecosystem. There is also a lot of opportunities for a company or engineer to become notable in the community. The project is backed by Google which is much larger than Facebook and the Angular Team is close with the Chrome Team so they're able to foresee future changes to chrome that will affect the framework. For example, the Angular framework was built to support web components and is optimised to work well in V8's VM due to patterns they discovered while talking to engineers at Google.
+
 
 # Flow to TypeScript
 <img width="892" alt="screen shot 2017-08-25 at 2 51 23 pm" src="https://user-images.githubusercontent.com/1016365/29734050-060b35e2-89a5-11e7-8b07-5318bcc530fd.png">
