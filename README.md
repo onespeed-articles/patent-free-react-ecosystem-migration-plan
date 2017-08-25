@@ -1,3 +1,5 @@
+![migration-off-react](https://user-images.githubusercontent.com/1016365/29734853-7adaff16-89a9-11e7-952e-2df421e52748.png)
+
 # How to migrate from React.js
 
 Due to recent news, you or your company might consider moving away from React.js or any technology under Facebook’s BSD+Patents License. If you plan to or if you're trying to determine the scope of the migration we provided a table of contents to determine what you need to know.
