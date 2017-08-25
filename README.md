@@ -59,6 +59,26 @@ The quickest way to migrate out of React is to move to Preact and their helper p
 ## Why
 Preact has a familar API as React using pattern like ES6 classes and Functional Components without anything else like `React.createClass`. At the same time the team behind Preact also provides a helper package for migration from React. Preact is highly optimized focusing in on the key parts that makes React so great. This is why we think Preact is the perfect first choice when moving off of React to an MIT licensed framework.
 
+
+## Switch to Preact is as easy as a CLI
+You can migrate from React to Preact with just one command using [`bye-react`](https://github.com/colinmcd94/bye-react). More specifically, this tool switches the project over to `preact-compat`, the "compatibility layer that makes React-based modules work with Preact, without any code changes".
+
+```
+$ npm install -g bye-react
+$ bye-react
+```
+If you want to undo `bye-react` you can simply run.
+```
+$ bye-react --undo
+```
+
+This is the fastest way because to switch to Preact because the tool does 3 things.
+* Transforms your build system if you use Webpack, Browserify, or the Babel React preset (or any combination thereof). If you don’t use any of these, this won't work. If you're not using any of these build tools then you probably should.
+* It's not guaranteed to work in all cases so for some cases this is a great first step. Make sure you create a new branch if you do plan to migrate this way. You should be using a version of React that is compatible with the current stable release `15.6.11`. May interact in interesting and unfortunate ways with non-standard build pipelines (e.g. if you dynamically generate .babelrc or package.json, etc).
+* Will delete comments inside `package.json` and `.babelrc` files. These files contain JSON-compliant data. To add the aliases, bye-react reads in the JSON, modifies it, and writes it back to disk. Comments are lost en route. If these are important to you then don't use bye-react.
+
+There are two more methods in this [guide provided by Preact](https://preactjs.com/guide/switching-to-preact)
+
 * [bye-react: one line CLI to migrate from React to Preact](https://github.com/colinmcd94/bye-react)
 * [Switching to Preact (from React)](https://preactjs.com/guide/switching-to-preact)
 * [Using Preact Instead Of React](https://medium.com/@rajaraodv/using-preact-instead-of-react-70f40f53107c)
