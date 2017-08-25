@@ -54,7 +54,10 @@ Going from zero to hello-world may seem daunting due to decision fatigue. This C
 
 
 # React to Preact
-The quickest way to migrate out of React is to move to Preact and their helper package called [`preact-compat`](https://github.com/developit/preact-compat). 
+The quickest way to migrate out of React is to move to Preact and their helper package called [`preact-compat`](https://github.com/developit/preact-compat). Preact also provides the good parts of React's API without the overhead or bloat of the framework that never really changed after it's release. Building on these ideas, Preact was able to excel on areas such as higher progressive web application score using lighthouse. also has better support for web components compared to React. Other differences also include server-side rendering and performence which is better in Preact than the original. 
+
+## Why
+Preact has a familar API as React using pattern like ES6 classes and Functional Components without anything else like `React.createClass`. At the same time the team behind Preact also provides a helper package for migration from React. Preact is highly optimized focusing in on the key parts that makes React so great. This is why we think Preact is the perfect first choice when moving off of React to an MIT licensed framework.
 
 * [bye-react: one line CLI to migrate from React to Preact](https://github.com/colinmcd94/bye-react)
 * [Switching to Preact (from React)](https://preactjs.com/guide/switching-to-preact)
@@ -64,12 +67,18 @@ The quickest way to migrate out of React is to move to Preact and their helper p
 # React to Vue
 Unlike React Vue is a full framework offering a router, state solution, and even scoped styles out the box. 
 
+## Why
+
 Resources:
 * [Switching From React To Vue.js](https://vuejsdevelopers.com/2017/05/28/switch-from-react-to-vue-js/)
 * [(Vue) Comparison with Other Frameworks](https://vuejs.org/v2/guide/comparison.html)
 
 # React to Angular
 When migrating to Angular from React there are a lot of differences that you need to be aware of. While some of the concepts of React are there with Angular there are just different architectural. Here's a quick list of differences.
+
+## Why
+
+## Design Differences
 
 * bootstrapping
 While in React this is as simple as importing a render function from react-dom in Angular we need to import not only the browser version of bootstrap but configure an internal runtime. Your main file for starting your framework is going to be completely different when switching.
