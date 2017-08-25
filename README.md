@@ -40,6 +40,18 @@ If any of this scares you (and it should) you're probably thinking about migrati
 # Effected Tech
 Facebook's open-source is pretty vast covering everything from UI frameworks to creating their own language. We're going to focus in on four technologies: `React`, `Flow`, `Jest`, and `create-react-app`. 
 
+* `React`
+Introducted as the V in MVC with the sole focus on rendering the view. The goal of React is to provide a developer with a simple API that others can build on top of much like how Node.js is for running JavaScript as a server. If you build anything on top of `React` you are affected.
+
+* `Flow`
+As we created large applications we start to run into very common errors such as typos or using a function incorrectly due to poor documentation. Using a typed language allows you to avoid testing for dealing with incorrect inputs or types. If you build anything with `Flow` you are affected.
+
+* `Jest`
+Zero configuration testing platform for applications is the main reason to use Jest over others. The idea here is that the testing frameworks knows you're most likely building an application so they provide you with all the essentials without having to configure your setup. If you test anything using `Jest` you are affected.
+
+* `create-react-app`
+Going from zero to hello-world may seem daunting due to decision fatigue. This CLI allows you to focus on your application and provides a large readme explaining everything you need to know about expanding from your hello-world. If you build anything on top of React you are affected.
+
 
 # React to Preact
 The quickest way to migrate out of React is to move to Preact and their helper package called [`preact-compat`](https://github.com/developit/preact-compat). 
