@@ -71,7 +71,7 @@ Resources:
 * [TypeScript vs Flow](https://github.com/niieani/typescript-vs-flowtype)
 
 # Jest to Mocha, Chai, Sinon
-If you're using Jest it should be straight forward to switch to Mocha. Mocha is very flexibility by design but the downside is that it requires more configuration. One configuration is having to choose an assertion library such as Chai and Sinon for mocking. Another benefit of switching to Mocha is the community and large support with videos, blog posts, and libraries. Mocha also providers snapshot testing as yet another integration with either `snap-shot` on npm. With Mocha there will be a lot configuration initially but once you're all set and ready your workflow would be better off due to the community support.
+If you're using Jest it should be straight forward to switch to Mocha. Mocha is very flexibility by design but the downside is that it requires more configuration. One configuration is having to choose an assertion library such as Chai and Sinon for mocking. Another benefit of switching to Mocha is the community and large support with videos, blog posts, and libraries. Mocha also providers snapshot testing as yet another integration with either `snap-shot-it` on npm. With Mocha there will be a lot configuration initially but once you're all set and ready your workflow would be better off due to the community support.
 
 resources:
 * [React Testing – Jest or Mocha?](https://spin.atomicobject.com/2017/05/02/react-testing-jest-vs-mocha/)
