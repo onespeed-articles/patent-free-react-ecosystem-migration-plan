@@ -154,6 +154,30 @@ Angular is the second biggest framework right after React so there is already an
 # Flow to TypeScript
 <img width="892" alt="screen shot 2017-08-25 at 2 51 23 pm" src="https://user-images.githubusercontent.com/1016365/29734050-060b35e2-89a5-11e7-8b07-5318bcc530fd.png">
 
+## Why
+TypeScript is the leader in Typed JavaScript so naturally it's the best choice and it was even created back in 2012 so the codebase and community is very mature and growing compared to Flow. This is a great choice as the team has put a lot of thught into it's syntax and they also make sure to follow and changes to the JavaScript language which means you can think of this as a superset of JavaScript.
+
+## Differences in usage and usability
+
+|   | TypeScript            | Flow |
+|---|------------------|--------|
+| Leading Design Goal / North Star | identify errors in programs through [a balance between correctness and productivity](https://github.com/Microsoft/TypeScript/wiki/TypeScript-Design-Goals) | enforce type soundness / safety |
+| IDE integrations | top-notch | sketchy, must save file to run type-check; some IDEs have workarounds to run real-time |
+| type-checking speed (w/o transpilation, *subjective, need benchmarks!*) | speed does not degrade much as the project grows | speed degrades with each additional file |
+| autocomplete | <ul><li>both during declaration and usage</li><li>feels instantaneous</li><li>feels reliable</li></ul> | <ul><li>[only for usage](https://github.com/facebook/flow/issues/3074)</li><li>feels sluggish (often a second or more of delay)</li><li>feels unreliable (sometimes does not show up at all)</li></ul> |
+| expressiveness | great (since TS @ 2.1) | great |
+| type safety | very good (7 / 10) | great (8 / 10) |
+| specifying generic parameters during call-time | yes [e.g.](http://www.typescriptlang.org/play/#src=function%20someFactory%3CT%3E()%20%7B%0D%0A%20%20return%20class%20%7B%0D%0A%20%20%20%20method(someParam%20%3A%20T)%20%7B%0D%0A%20%20%20%20%20%20%0D%0A%20%20%20%20%7D%0D%0A%20%20%7D%0D%0A%7D%0D%0A%0D%0A%2F%2F%20how%20to%20invoke%20this%20factory%20with%20a%20defined%20%3CT%3E%3F%0D%0A%0D%0Aconst%20SomeClass%20%3D%20someFactory%3C%7B%20whatever%3A%20string%20%7D%3E()%0D%0Aconst%20someInstance%20%3D%20new%20SomeClass()%0D%0AsomeInstance.method('will-error-here')%0D%0A) | no |
+| specifying generic parameters for type definitions | yes | yes |
+| typings for public libraries | plenty of well maintained typings | a handful of mostly incomplete typings |
+| unique features | <ul><li>autocomplete for object construction</li><li>declarable `this` in functions (typing `someFunction.bind()`)</li><li>large library of typings</li><li>more flexible [type mapping via iteration](https://github.com/Microsoft/TypeScript/pull/12114)</li><li>namespacing</li></ul> | <ul><li>variance</li><li>existential types `*`</li><li>testing potential code-paths when types not declared for maximum inference</li><li>`$Diff<A, B>` type</li></ul> |
+| type spread operator | [work in progress](https://github.com/Microsoft/TypeScript/pull/13470) | [shipped](https://github.com/facebook/flow/commit/ad443dc92879ae21705d4c61b942ba2f8ad61e4d) >=0.42 |
+| ecosystem flexibility | [work in progress](https://github.com/Microsoft/TypeScript/issues/6508) | no extensions |
+| programmatic hooking | architecture prepared, work in progress | work in progress |
+| documentation and resources | <ul><li>very good docs</li><li>many books</li><li>videos</li><li>e-learning resources</li></ul> | <ul><li>incomplete, often vague docs</li><ul> |
+| commercial support | no | no |
+| error quality | good | good in some, vague in other cases |
+
 
 Resources:
 * [Migrating from Flow to Typescript](https://medium.com/@ckoster22/migrating-from-flow-to-typescript-b065796797db)
