@@ -61,7 +61,9 @@ Going from zero to hello-world may seem daunting due to decision fatigue. This C
 The quickest way to migrate out of React is to move to Preact and their helper package called [`preact-compat`](https://github.com/developit/preact-compat). Preact also provides the good parts of React's API without the overhead or bloat of the framework that never really changed after it's release. Building on these ideas, Preact was able to excel on areas such as higher progressive web application score using lighthouse. also has better support for web components compared to React. Other differences also include server-side rendering and performence which is better in Preact than the original. 
 
 ## Why
-Preact has a familar API as React using pattern like ES6 classes and Functional Components without anything else like `React.createClass`. At the same time the team behind Preact also provides a helper package for migration from React. Preact is highly optimized focusing in on the key parts that makes React so great. This is why we think Preact is the perfect first choice when moving off of React to an MIT licensed framework.
+Preact has a familar API as React using pattern like ES6 classes and Functional Components without anything else like `React.createClass`, `Synthetic Events`, `PropType` validations, `React.Children`, and a lot of virtual-dom optimizations. At the same time the team behind Preact also provides a helper package for migration from React. Preact is highly optimized focusing in on the key parts that makes React so great while providing you with the best performance. This is why we think Preact is the perfect first choice when moving off of React to an MIT licensed framework.
+
+Preact is a 3KB alternative to native React. This is accomplished mostly in part to lightening up the original React API and removing the Synthetic Events, PropType validations, and the ability call React.Children. React provides an optional add-on called, preact-compat if any of the before mentioned features are needed.
 
 ## Switch to Preact with just one command line
 You can migrate from React to Preact with just one command using [`bye-react`](https://github.com/colinmcd94/bye-react). More specifically, this tool switches the project over to `preact-compat`, the "compatibility layer that makes React-based modules work with Preact, without any code changes".
@@ -90,9 +92,16 @@ There are two more methods in this [guide provided by Preact](https://preactjs.c
 # React to Vue
 <img width="857" alt="screen shot 2017-08-25 at 2 38 43 pm" src="https://user-images.githubusercontent.com/1016365/29733704-5371e116-89a3-11e7-941a-5a96ca81b3a7.png">
 
-Unlike React Vue is a full framework offering a router, state solution, and even scoped styles out the box. 
+Unlike React Vue is a full framework offering a router, state solution, and even scoped styles out the box. In React you're always worried about choosing the right package for state, routing, styles, or any other missing part that React doesn't provide. Vue assumes you are creating a web application so they make sure to guide you along your way with a ton of documentation on all parts of the framework. They even go so far as to compare Vue to others and give you an idea as to why they made a certain design decision. This framework truely feels as it was built by the design of it's community because it was initially just like React (just the View) before it grew into a full web framework that it is known for today.
+
+## Performance
+Vue was created with performance first by design. Each part of Vue reminds you of how much thought was put into it's design in order to achieve it's performance from all the learnings the community found in React. For example their virtual-dom does all of the optimizations that you want in React but by default. Vue also made sure you can still use the framework by simply dropping a script tag in your index.html and easily get up and running without losing performance for file size.
+
+## Scale
+When talking about scale for the frontend you endup talking about how many engineers can work on the project without losing their minds with merge conflicts. This framework also likes to call itself progressive since you can easily scale the abtraction level high or as low as possible with a simple script tag. 
 
 ## Why
+Vue allows you to use both JSX and Template but more of the time you will find yourself using the template syntax. Unlike React where you're always faced with decision fatigue, in Vue.js you are able to focus on your application code with a clear API that doesn't try to introduce any new terms. We this Vue.js is a great choice or migration and more so for green field projects. If you want to get up and running with your application in minutes you really should give Vue a try.
 
 Resources:
 * [Switching From React To Vue.js](https://vuejsdevelopers.com/2017/05/28/switch-from-react-to-vue-js/)
@@ -163,11 +172,18 @@ A great way to initially create your project is using a CLI since it allows you 
 
 ## preact-cli
 > Start building a Preact Progressive Web App in seconds 🔥
+
+In this CLI you also get routes wired up by default as you're most likely going to create an application with them. Unlike the React CLI 
+
 ## vue-cli
 > A simple CLI for scaffolding Vue.js projects.
+
+Vue CLI provides you with template so at any point you and your company can create your own template starter. This means the CLI is already better than others because often people disagree with the initial setup.
+
 ## angular-cli
 > CLI for Angular applications based on the ember-cli project.
 
+A lot of patterns and conventions in Angular are automated with this CLI which allows you to focus more on the app
 
 
 Resources:
