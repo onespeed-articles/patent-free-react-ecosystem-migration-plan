@@ -18,7 +18,7 @@ Table of contents
 
 
 # The Issue
-From what Facebook's lawyers are saying to their engineers who ask all of their open-source projects require their BSD+Patents License which, in Facebook's reasoning, this is meant to be a defense from people suring Facebook for patents. While this is an "old idea" for lawyers the result of introducing this again in the open-source community comes off as tone deaf of the original goal of open-source. Here is a technology lawyer's response to another technology lawyer who believes this isn't a huge issue.
+From what Facebook's lawyers are saying to their engineers who ask all of their open-source projects require their BSD+Patents License. The license is meant to be a defense from people suing Facebook for patents. While this is an "old idea" for lawyers the result of introducing this again in the open-source community comes off as tone deaf of the original goal of open-source. Here is a technology lawyer's response to another technology lawyer who believes this isn't a huge issue.
 
 ```
 I'm also a technology lawyer, i've written several of the patent grants used very widely, as well as having been responsible for open source licensing compliance at Google for a very long time .
@@ -36,33 +36,33 @@ As for the origins, these kinds of broad termination clauses have been around fo
 Rather than come to a community of license authors, etc, and say "hey, we want to re-explore this, because we're seeing a problem", they did it this way. That's ... unlikely to be a successful mechanism (and in fact, i know a large number of corporate counsel who have banned it).
 ```
 
-If any of this scares you (and it should) you're probably thinking about migrating. Don't worry I got you covered with the best migration paths.
+If any of this scares you (and it should) you're probably thinking about migrating. Don't worry, I got you covered with the best migration paths.
 
 # Effected Tech
 Facebook's open-source is pretty vast covering everything from UI frameworks to creating their own language. We're going to focus in on four technologies: `React`, `Flow`, `Jest`, and `create-react-app`. 
 
 * `React`
-Introducted as the V in MVC with the sole focus on rendering the view. The goal of React is to provide a developer with a simple API that others can build on top of much like how Node.js is for running JavaScript as a server. If you build anything on top of `React` you are affected.
+Introduced as the V in MVC with the sole focus on rendering the view. The goal of React is to provide a developer with a simple API that others can build on top. The team behind React provides a simple common abstraction much like what Node.js did for running JavaScript as a server. If you build anything that depends on `React` you are affected by it's license.
 
 * `Flow`
-As we created large applications we start to run into very common errors such as typos or using a function incorrectly due to poor documentation. Using a typed language allows you to avoid testing for dealing with incorrect inputs or types. If you build anything with `Flow` you are affected.
+As we created large applications we start to run into very common problems within our codebase. Basic errors such as typos or using a function incorrectly due to poor documentation happen due to human error. Using a typed language allows the developer to avoid testing for human errors such as incorrect inputs or types. If you build anything with `Flow` you might be affected by it's license.
 
 * `Jest`
-Zero configuration testing platform for applications is the main reason to use Jest over others. The idea here is that the testing frameworks knows you're most likely building an application so they provide you with all the essentials without having to configure your setup. If you test anything using `Jest` you are affected.
+Known as the zero configuration testing platform. The idea here is that the testing framework knows you're most likely building an application which allows them to provide you with all the essentials. If you test anything using `Jest` you might be affected by it's license.
 
 * `create-react-app`
-Going from zero to hello-world may seem daunting due to decision fatigue. This CLI allows you to focus on your application and provides a large readme explaining everything you need to know about expanding from your hello-world. If you build anything on top of React you are affected.
+This CLI creates a simple hello-world application. There is also a large readme explaining everything you need to know about expanding from your hello-world. If you build anything on top of `React` you are affected by it's license.
 
 
 # React to Preact
 <img width="699" alt="screen shot 2017-08-25 at 2 38 20 pm" src="https://user-images.githubusercontent.com/1016365/29733688-3a889c1c-89a3-11e7-86e0-2a73ce8c8c50.png">
 
-The quickest way to migrate out of React is to move to Preact and their helper package called [`preact-compat`](https://github.com/developit/preact-compat). Preact also provides the good parts of React's API without the overhead or bloat of the framework that never really changed after it's release. Building on these ideas, Preact was able to excel on areas such as higher progressive web application score using lighthouse. also has better support for web components compared to React. Other differences also include server-side rendering and performence which is better in Preact than the original. 
+The quickest way to migrate out of React is to move to Preact using their helper package called [`preact-compat`](https://github.com/developit/preact-compat). Preact also provides the good parts of React's API without the overhead or bloat of the framework that never really changed after it's release. Building on these ideas, Preact was able to excel on areas such as higher progressive web application score using lighthouse. also has better support for web components compared to React. Other differences also include server-side rendering and performance which is better in Preact than React. 
 
 ## Why
-Preact has a familar API as React using pattern like ES6 classes and Functional Components without anything else like `React.createClass`, `Synthetic Events`, `PropType` validations, `React.Children`, and a lot of virtual-dom optimizations. At the same time the team behind Preact also provides a helper package for migration from React. Preact is highly optimized focusing in on the key parts that makes React so great while providing you with the best performance. This is why we think Preact is the perfect first choice when moving off of React to an MIT licensed framework.
+Preact has a familiar API as React using pattern like ES6 classes and Functional Components without anything else like `React.createClass`, `Synthetic Events`, `PropType` validations, `React.Children`, and a lot of virtual-dom optimizations. At the same time the team behind Preact also provides a helper package for migration from React. Preact is highly optimized focusing in on the key parts that makes React so great while providing you with the best performance. This is why we think Preact is the perfect first choice when moving off of React to an MIT licensed framework.
 
-Preact is a 3KB alternative to native React. This is accomplished mostly in part to lightening up the original React API and removing the Synthetic Events, PropType validations, and the ability call React.Children. React provides an optional add-on called, preact-compat if any of the before mentioned features are needed.
+Preact is a 3KB alternative to native React. This is accomplished mostly in part to lightening up the original React API and removing the Synthetic Events, PropType validations, and the ability call React.Children. React provides an optional add-on called, preact-compat if any of the aforementioned features are needed.
 
 ## Switch to Preact with just one command line
 You can migrate from React to Preact with just one command using [`bye-react`](https://github.com/colinmcd94/bye-react). More specifically, this tool switches the project over to `preact-compat`, the "compatibility layer that makes React-based modules work with Preact, without any code changes".
