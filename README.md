@@ -14,7 +14,7 @@ Table of contents
   * [React to Angular](#react-to-angular)
   * [Flow to TypeScript](#flow-to-typescript)
   * [Jest to Mocha, Chai, Sinon](#jest-to-mocha-chai-sinon)
-  * [create-react-app](#create-react-app)
+  * [create-react-app to other CLIs](#create-react-app-to-other-clis)
   * [Need help?](#need-help)
 
 
@@ -191,7 +191,7 @@ If you're using Jest it should be straight forward to switch to Mocha. Mocha is 
 resources:
 * [React Testing – Jest or Mocha?](https://spin.atomicobject.com/2017/05/02/react-testing-jest-vs-mocha/)
 
-# create-react-app
+# create-react-app to other CLIs
 A great way to initially create your project is using a CLI since it allows you to focus on your application code rather than learning your build setup. The main difference between React's CLI compared to others is that the other CLIs have more feature while React's CLI create large documentation around their initial scaffold. 
 
 ## preact-cli
