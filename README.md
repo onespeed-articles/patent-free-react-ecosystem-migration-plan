@@ -9,12 +9,12 @@ Table of contents
 
   * [The Issue](#the-issue)
   * [Effected Tech](#effected-tech)
-    * [React to Preact](#react-to-preact)
-    * [React to Vue](#react-to-vue)
-    * [React to Angular](#react-to-angular)
-    * [Flow to TypeScript](#flow-to-typescript)
-    * [Jest to Mocha, Chai, Sinon](#jest-to-mocha-chai-sinon)
-    * [create-react-app](#create-react-app)
+  * [React to Preact](#react-to-preact)
+  * [React to Vue](#react-to-vue)
+  * [React to Angular](#react-to-angular)
+  * [Flow to TypeScript](#flow-to-typescript)
+  * [Jest to Mocha, Chai, Sinon](#jest-to-mocha-chai-sinon)
+  * [create-react-app](#create-react-app)
   * [Need help?](#need-help)
 
 
