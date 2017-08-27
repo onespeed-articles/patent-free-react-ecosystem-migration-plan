@@ -15,7 +15,6 @@ Table of contents
   * [Flow to TypeScript](#flow-to-typescript)
   * [Jest to Mocha, Chai, Sinon](#jest-to-mocha-chai-sinon)
   * [create-react-app to other CLIs](#create-react-app-to-other-clis)
-  * [Need help?](#need-help)
 
 
 # The Issue
@@ -215,5 +214,3 @@ Resources:
 * [vue-cli](https://github.com/vuejs/vue-cli)
 * [angular-cli](https://github.com/angular/angular-cli)
 
-# Need help?
-If you or your company needs help with migrate we offer migration services ranging from code-reviews to us handling the full migration of your app to any of other technology that fits your needs. We also provide training for your team to jump in the new code base to quickly be production. 
