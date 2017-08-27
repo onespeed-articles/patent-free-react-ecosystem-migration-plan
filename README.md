@@ -78,7 +78,7 @@ $ bye-react --undo
 
 This is the fastest way to switch to Preact because the tool does 3 things that you would have to do manually.
 * Transforms your build system if you use Webpack, Browserify, or the Babel React preset (or any combination thereof). If you don’t use any of these tools (although you probably should), this won’t work.
-* It's not guaranteed to work in all cases so for some cases this is a great first step. Make sure you create a new branch if you do plan to migrate this way. You should be using a version of React that is compatible with the current stable release `15.6.11`. May interact in interesting and unfortunate ways with non-standard build pipelines (e.g. if you dynamically generate .babelrc or package.json, etc).
+* It's not guaranteed to work in all cases so for some, this is a great first step.  Note: Make sure to create a new branch if you plan to migrate this way.  Also be sure to use a version of React that is compatible with the current stable release.  Failure to do so may cause interesting and unfortunate ways with non-standard build pipelines (e.g. if you dynamically generate .babelrc or package.json, etc).
 * Will delete comments inside `package.json` and `.babelrc` files. These files contain JSON-compliant data. To add the aliases, bye-react reads in the JSON, modifies it, and writes it back to disk. Comments are lost en route. If these are important to you then don't use bye-react.
 
 There are two more methods in this [guide provided by Preact](https://preactjs.com/guide/switching-to-preact)
