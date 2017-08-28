@@ -2,9 +2,9 @@
 
 # How to migrate from React.js
 
-Due to recent news, you might consider moving away from React.js or any technology under Facebook’s BSD+Patents License. If you are considering migrating or if you're trying to evaluate the scope of a migration, we've provided you a table of contents to determine what you need to know.
+Due to recent news, you might be considering moving away from React.js or any technology under Facebook’s BSD+Patents License. If you are migrating or trying to evaluate the scope of a migration, we've provided you with a quick guide to help you make your decision.
 
-Table of contents
+Table of Contents
 =================
 
   * [The Issue](#the-issue)
@@ -36,7 +36,7 @@ As for the origins, these kinds of broad termination clauses have been around fo
 Rather than come to a community of license authors, etc, and say "hey, we want to re-explore this, because we're seeing a problem", they did it this way. That's ... unlikely to be a successful mechanism (and in fact, i know a large number of corporate counsel who have banned it).
 ```
 
-If any of this scares you, (and it should) you're probably considering migrating. Don't worry, I got you covered with the best migration paths.
+If any of this scares you, (and it should) you're probably considering migrating. Don't worry, we've got you covered with the best migration paths.
 
 # Effected Tech
 Facebook's open-source is pretty vast covering everything from UI frameworks to creating their own language. We're going to focus in on four technologies: `React`, `Flow`, `Jest`, and `create-react-app`.
@@ -55,14 +55,14 @@ This CLI creates a simple hello-world application. There is also a large readme 
 
 
 # React to Preact
-<img width="699" alt="screen shot 2017-08-25 at 2 38 20 pm" src="https://user-images.githubusercontent.com/1016365/29733688-3a889c1c-89a3-11e7-86e0-2a73ce8c8c50.png">
+<img width="699" alt="React to Preact" src="https://user-images.githubusercontent.com/1016365/29733688-3a889c1c-89a3-11e7-86e0-2a73ce8c8c50.png">
 
 The quickest way to migrate out of React is to move to Preact using their helper package called [`preact-compat`](https://github.com/developit/preact-compat). Preact also provides the good parts of React's API without the overhead or bloat of the framework that never really changed after it's release. Building on these ideas, Preact was able to excel on areas such as higher progressive web application score using lighthouse. also has better support for web components compared to React. Other differences also include server-side rendering and performance which is better in Preact than React.
 
 ## Why
 Preact has a familiar API as React using pattern like ES6 classes and Functional Components without anything else like `React.createClass`, `Synthetic Events`, `PropType` validations, `React.Children`, and a lot of virtual-dom optimizations. At the same time the team behind Preact also provides a helper package for migration from React. Preact is highly optimized focusing in on the key parts that makes React so great while providing you with the best performance. This is why we think Preact is the perfect first choice when moving off of React to an MIT licensed framework.
 
-Preact is a 3KB alternative to native React. This is accomplished mostly in part to lightening up the original React API and removing the Synthetic Events, PropType validations, and the ability call React.Children. React provides an optional add-on called, preact-compat if any of the aforementioned features are needed.
+Preact is a 3KB alternative to the standard React lib. This is accomplished mostly in part to lightening up the original React API and removing the Synthetic Events, PropType validations, and the ability call React.Children. React provides an optional add-on called, preact-compat if any of the aforementioned features are needed.
 
 ## Switch to Preact with just one command line
 You can migrate from React to Preact with just one command using [`bye-react`](https://github.com/colinmcd94/bye-react). More specifically, this tool switches the project over to `preact-compat`, the "compatibility layer that makes React-based modules work with Preact, without any code changes".
@@ -89,27 +89,27 @@ There are two more methods in this [guide provided by Preact](https://preactjs.c
 * [Differences to React](https://github.com/developit/preact/wiki/Differences-to-React)
 
 # React to Vue
-<img width="857" alt="screen shot 2017-08-25 at 2 38 43 pm" src="https://user-images.githubusercontent.com/1016365/29733704-5371e116-89a3-11e7-941a-5a96ca81b3a7.png">
+<img width="857" alt="React to Vue" src="https://user-images.githubusercontent.com/1016365/29733704-5371e116-89a3-11e7-941a-5a96ca81b3a7.png">
 
-Unlike React Vue is a full framework offering a router, state solution, and even scoped styles out the box. In React you're always worried about choosing the right package for state, routing, styles, or any other missing part that React doesn't provide. Vue assumes you are creating a web application so they make sure to guide you along your way with a ton of documentation on all parts of the framework. They even go so far as to compare Vue to others and give you an idea as to why they made a certain design decision. This framework truely feels as it was built by the design of it's community because it was initially just like React (just the View) before it grew into a full web framework that it is known for today.
+Unlike React, Vue is a full framework offering a router, state solution, and even scoped styles out the box. In React you're always worried about choosing the right package for state, routing, styles, or any other missing parts that React doesn't provide. Vue assumes you are creating a web application so they make sure to guide you along your way with a ton of documentation for all parts of the framework. They even go so far as to compare Vue to others and give you an idea as to why they made certain design decisions. This framework truly feels like it was built by the design for the community because it was initially just like React (just the View layer) before it grew into the full web framework that it is today.
 
 ## Performance
-Vue was created with performance first by design. Each part of Vue reminds you of how much thought was put into it's design in order to achieve it's performance from all the learnings the community found in React. For example their virtual-dom does all of the optimizations that you want in React but by default. Vue also made sure you can still use the framework by simply dropping a script tag in your index.html and easily get up and running without losing performance for file size.
+Vue was created emphasizing performance first by design. Each part of Vue shows you how much thought was put into it's design to achieve it's performance with all the lessons the community learned with React. For example, their virtual-dom implementation by default has optimizations that you would want in React. Vue also ensures you can use the framework by simply dropping a script tag in your index.html and easily get up and running without losing performance from file size.
 
 ## Scale
-When talking about scale for the frontend you endup talking about how many engineers can work on the project without losing their minds with merge conflicts. This framework also likes to call itself progressive since you can easily scale the abtraction level high or as low as possible with a simple script tag.
+When talking about scale for the frontend you end up talking about how many engineers can work on the project without losing their minds with merge conflicts. This framework also likes to call itself progressive since you can easily scale the abtraction level high or as low as possible with a simple script tag.
 
 ## Why
-Vue allows you to use both JSX and Template but more of the time you will find yourself using the template syntax. Unlike React where you're always faced with decision fatigue, in Vue.js you are able to focus on your application code with a clear API that doesn't try to introduce any new terms. We think Vue.js is a great choice for migrating from React and more so for green field projects. If you want to get up and running with your application in minutes you really should give Vue a try.
+Vue allows you to use both JSX and Template but most of the time you will find yourself using the template syntax. Vue also benefits from having a clear API for building applications so you can focus on writing application code rather than the decision fatigue often associated with React projects. We think Vue.js is a great choice for migrating from React, and espcially for field projects. If you want to get up and running with your application in minutes you really should give Vue a try.
 
 Resources:
 * [Switching From React To Vue.js](https://vuejsdevelopers.com/2017/05/28/switch-from-react-to-vue-js/)
 * [(Vue) Comparison with Other Frameworks](https://vuejs.org/v2/guide/comparison.html)
 
 # React to Angular
-<img width="815" alt="screen shot 2017-08-25 at 2 38 34 pm" src="https://user-images.githubusercontent.com/1016365/29733693-442bba1a-89a3-11e7-95de-4cafc89974eb.png">
+<img width="815" alt="React to Angular" src="https://user-images.githubusercontent.com/1016365/29733693-442bba1a-89a3-11e7-95de-4cafc89974eb.png">
 
-When migrating to Angular from React there are many differences that you should be aware of. While some of the concepts of React remain with Angular, they are different architecturally. Here's a quick list of differences.
+While many React concepts can be found in Angular, you should be aware of quite a few architectutral differences from React to Angular. Here's a quick list of differences.
 
 ## Design Differences
 
@@ -123,13 +123,13 @@ In Angular you have props but they're called Inputs and only allow values that d
 In Angular you're most likely using TypeScript which will tell you that you're using the input incorrectly so you won't need runtime type checking as it's in the build system and editor.
 
 * `Styles`
-In React you have to find your own way to manage styles in a way that works with your team. In Angular this is solved by using the browser API to emulate scoped styles as if you're using the Shadow DOM. So, rather than having to choose which style library works for you, in Angular it's built-in.
+In React you have to find your own way to manage styles in a way that works for your team. In Angular this is solved by using the browser API to emulate scoped styles like you're using the Shadow DOM. So, rather than having to choose which style library works for you, in Angular it's built-in.
 
 * `Storing State`
-Both frameworks allow you to store local state within the component which affects rendering to his child components. Angular also provides you with ways to wire up any sort of store with it's services.
+Both frameworks allow you to store local state within the component to affect rendering in child components. Angular also provides you with ways to wire up any sort of store with it's services.
 
 * `Event Handlers`
-While in React you have hard coded events, in Angular this isn't the case. In Angular you can use the framework's method of wiring up events that will work for any event name called Outputs. In both frameworks you can also get a reference of the element to manually wire up the listener.
+While in React you have hard coded events, this isn't the case in Angular. Angular's method for wiring up events uses a built-in feature called Outputs. In both frameworks you can also get a reference of the element to manually wire up the listener.
 
 * `State Change`
 While in React you must use `setState` in order to make sure your changes are reflected, in Angular you don't. In Angular you simply change the value in your component and the changes are batched and reflected automatically. Angular uses zone.js to track all asynchronous calls and this comes in handy when doing server-side rendering.
@@ -147,11 +147,11 @@ Practically the same as React, in Angular you're able to compose many components
 In React we're able to use JavaScript for dynamic repeating elements. In Angular we use structural directives to declaratively tell the compiler how to wire up your dynamic elements
 
 ## Why
-Angular is the second biggest framework right after React so there is already an established ecosystem. There are also lot's of opportunities for a company or engineer to become notable in the community. The project is backed by Google which is much larger than Facebook and the Angular Team is close with the Chrome Team so they're able to foresee future changes to chrome that will affect the framework. For example, the Angular framework was built to support web components and is optimised to work well in V8's VM due to patterns they discovered while talking to engineers at Google.
+Angular is the second biggest framework right after React so there is already an established ecosystem. There are many opportunities for a company or engineer to become notable in the community. The project is backed by Google which is much larger than Facebook and the Angular Team is close with the Chrome Team so they're able to foresee future changes to chrome that will affect the framework. For example, the Angular framework was built to support web components and is optimised to work well in V8's VM due to patterns they discovered while talking to engineers at Google.
 
 
 # Flow to TypeScript
-<img width="892" alt="screen shot 2017-08-25 at 2 51 23 pm" src="https://user-images.githubusercontent.com/1016365/29734050-060b35e2-89a5-11e7-8b07-5318bcc530fd.png">
+<img width="892" alt="Flow to TypeScript" src="https://user-images.githubusercontent.com/1016365/29734050-060b35e2-89a5-11e7-8b07-5318bcc530fd.png">
 
 ## Why
 TypeScript is the leader in Typed JavaScript so naturally it's the best choice. It was created back in 2012 so the codebase and community are both very mature when compared to Flow. TypeScript remains a great choice considering how much has been invested into it's syntax while also making sure to follow changes to the JavaScript. You can think of TypeScript as a superset of JavaScript.
@@ -183,15 +183,15 @@ Resources:
 * [TypeScript vs Flow](https://github.com/niieani/typescript-vs-flowtype)
 
 # Jest to Mocha, Chai, Sinon
-<img width="559" alt="screen shot 2017-08-25 at 2 51 55 pm" src="https://user-images.githubusercontent.com/1016365/29734063-10bb26be-89a5-11e7-812b-60e3abecbdd4.png">
+<img width="559" alt="Jest to Mocha, Chai, Sinon" src="https://user-images.githubusercontent.com/1016365/29734063-10bb26be-89a5-11e7-812b-60e3abecbdd4.png">
 
-If you're using Jest, then the switch to Mocha should be relatively straight forward. Mocha is very flexibility by design but has one downside in that it requires more configuration. One of such, is having to choose an assertion library such as Chai and Sinon for mocking. Another benefit of switching to Mocha is the community and large support with videos, blog posts, and libraries. Mocha also provides snapshot testing as yet another integration with either `snap-shot-it` on npm. With Mocha there will be a lot configuration initially but once you're all set and ready, your workflow would be better off due to the outstanding community support.
+If you're using Jest, then the switch to Mocha should be relatively straight forward. Mocha is very flexible by design but has one downside – it requires more configuration. An example being, having to choose an assertion library such as Chai and Sinon for mocking. Another benefit of switching to Mocha is the community and large support with videos, blog posts, and libraries. Mocha also provides snapshot testing as yet another integration with either `snap-shot-it` on npm. With Mocha there will be a lot configuration initially but once you're all set and ready, your workflow would be better off due to the outstanding community support.
 
 resources:
 * [React Testing – Jest or Mocha?](https://spin.atomicobject.com/2017/05/02/react-testing-jest-vs-mocha/)
 
 # create-react-app to other CLIs
-A great way to initially create your project is using a CLI since it allows you to focus on your application code rather than learning your build setup. The main difference between React's CLI in comparison to others is that other CLIs have more features while React's create CLI has large documentation around their initial scaffold.
+A great way to initially create your project is using a CLI since it allows you to focus on your application code rather than learning your build setup. The main difference between React's CLI in comparison to others is that other CLIs have more features while React's create CLI has a large amount of documentation about their initial scaffold.
 
 ## preact-cli
 > Start building a Preact Progressive Web App in seconds 🔥
