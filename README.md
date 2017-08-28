@@ -113,38 +113,38 @@ When migrating to Angular from React there are many differences that you should 
 
 ## Design Differences
 
-* bootstrapping
-> While in React this is as simple as importing a render function from react-dom, in Angular we need to import not only the browser version of bootstrap but configure an internal runtime. Your main file for starting your framework is going to be completely different when switching.
+* `Bootstrapping`
+While in React this is as simple as importing a render function from react-dom, in Angular we need to import not only the browser version of bootstrap but configure an internal runtime. Your main file for starting your framework is going to be completely different when switching.
 
-* props
+* `Props`
 In Angular you have props but they're called Inputs and only allow values that don't include functions. As with react you're able to use unidirectional data flow in Angular using Inputs.
 
-* prop-types
-> In Angular you're most likely using TypeScript which will tell you that you're using the input incorrectly so you won't need runtime type checking as it's in the build system and editor.
+* `Prop-Types`
+In Angular you're most likely using TypeScript which will tell you that you're using the input incorrectly so you won't need runtime type checking as it's in the build system and editor.
 
-* styles
-> In React you have to find your own way to manage styles in a way that works with your team. In Angular this is solved by using the browser API to emulate scoped styles as if you're using the Shadow DOM. So, rather than having to choose which style library works for you, in Angular it's built-in.
+* `Styles`
+In React you have to find your own way to manage styles in a way that works with your team. In Angular this is solved by using the browser API to emulate scoped styles as if you're using the Shadow DOM. So, rather than having to choose which style library works for you, in Angular it's built-in.
 
-* storing state
+* `Storing State`
 Both frameworks allow you to store local state within the component which affects rendering to his child components. Angular also provides you with ways to wire up any sort of store with it's services.
 
-* event handlers
+* `Event Handlers`
 While in React you have hard coded events, in Angular this isn't the case. In Angular you can use the framework's method of wiring up events that will work for any event name called Outputs. In both frameworks you can also get a reference of the element to manually wire up the listener.
 
-* state change
+* `State Change`
 While in React you must use `setState` in order to make sure your changes are reflected, in Angular you don't. In Angular you simply change the value in your component and the changes are batched and reflected automatically. Angular uses zone.js to track all asynchronous calls and this comes in handy when doing server-side rendering.
 
-* data binding with unidirectional data flow
+* `Data Binding with Unidirectional Data Flow`
 Angular allows you to benefit from both one-way data binding as well as two-way data binding without losing out on the benefits of unidirectional data flow. This is one of the best features of Angular as you keep the benefit from previous patterns without a performance loss.
 
-* refs
+* `Refs`
 React provides you with escape hatches where possible and Angular does the same with ElementRef. Angular also makes sure to prevent you from getting direct reference to the element so it can be garbage collected.
 
-* component composition
+* `Component Composition`
 Practically the same as React, in Angular you're able to compose many components within each other as well as use content projection. Angular also allows you to use native browser slot API for better interoperability and composition. You can also use the native Shadow DOM API to truely encapsulate your component and styles.
 
-* dynamic elements
-> In React we're able to use JavaScript for dynamic repeating elements. In Angular we use structural directives to declaratively tell the compiler how to wire up your dynamic elements
+* `Dynamic Elements`
+In React we're able to use JavaScript for dynamic repeating elements. In Angular we use structural directives to declaratively tell the compiler how to wire up your dynamic elements
 
 ## Why
 Angular is the second biggest framework right after React so there is already an established ecosystem. There are also lot's of opportunities for a company or engineer to become notable in the community. The project is backed by Google which is much larger than Facebook and the Angular Team is close with the Chrome Team so they're able to foresee future changes to chrome that will affect the framework. For example, the Angular framework was built to support web components and is optimised to work well in V8's VM due to patterns they discovered while talking to engineers at Google.
