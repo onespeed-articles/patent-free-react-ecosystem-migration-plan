@@ -100,7 +100,7 @@ Vue was created emphasizing performance first by design. Each part of Vue shows 
 When talking about scale for the frontend you end up talking about how many engineers can work on the project without losing their minds with merge conflicts. This framework also likes to call itself progressive since you can easily scale the abtraction level high or as low as possible with a simple script tag.
 
 ## Why
-Vue allows you to use both JSX and Template but most of the time you will find yourself using the template syntax. Vue also benefits from having a clear API for building applications so you can focus on writing application code rather than the decision fatigue often associated with React projects. We think Vue.js is a great choice for migrating from React, and espcially for field projects. If you want to get up and running with your application in minutes you really should give Vue a try.
+Vue allows you to use both JSX and Template but most of the time you will find yourself using the template syntax. Vue also benefits from having a clear API for building applications so you can focus on writing application code rather than the decision fatigue often associated with React projects. We think Vue.js is a great choice for migrating from React, and espcially for green field projects. If you want to get up and running with your application in minutes you really should give Vue a try.
 
 Resources:
 * [Switching From React To Vue.js](https://vuejsdevelopers.com/2017/05/28/switch-from-react-to-vue-js/)
