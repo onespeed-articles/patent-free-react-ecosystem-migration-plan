@@ -2,7 +2,7 @@
 
 # How to migrate from React.js
 
-Due to recent news, you might be considering moving away from React.js or any technology under Facebook’s BSD+Patents License. If you are migrating or trying to evaluate the scope of a migration, we've provided you with a quick guide to help you make your decision.
+Due to recent news, you might consider moving away from React.js or any technology under Facebook’s BSD+Patents License. If you are migrating or trying to evaluate the scope of a migration, we've provided you with a quick guide to help you make your decision.
 
 Table of Contents
 =================
@@ -94,7 +94,7 @@ There are two more methods in this [guide provided by Preact](https://preactjs.c
 Unlike React, Vue is a full framework offering a router, state solution, and even scoped styles out the box. In React you're always worried about choosing the right package for state, routing, styles, or any other missing parts that React doesn't provide. Vue assumes you are creating a web application so they make sure to guide you along your way with a ton of documentation for all parts of the framework. They even go so far as to compare Vue to others and give you an idea as to why they made certain design decisions. This framework truly feels like it was built by the design for the community because it was initially just like React (just the View layer) before it grew into the full web framework that it is today.
 
 ## Performance
-Vue was created emphasizing performance first by design. Each part of Vue shows you how much thought was put into it's design to achieve it's performance with all the lessons the community learned with React. For example, their virtual-dom implementation by default has optimizations that you would want in React. Vue also ensures you can use the framework by simply dropping a script tag in your index.html and easily get up and running without losing performance from file size.
+Vue was designed emphasizing a performance first approach. Each part of Vue shows you how much thought was put into it's design to achieve it's performance with all the lessons the community learned with React. For example, their virtual-dom implementation by default has optimizations that you would want in React. Vue also ensures you can use the framework by simply dropping a script tag in your index.html and easily get up and running without losing performance from file size.
 
 ## Scale
 When talking about scale for the frontend you end up talking about how many engineers can work on the project without losing their minds with merge conflicts. This framework also likes to call itself progressive since you can easily scale the abtraction level high or as low as possible with a simple script tag.
@@ -109,7 +109,7 @@ Resources:
 # React to Angular
 <img width="815" alt="React to Angular" src="https://user-images.githubusercontent.com/1016365/29733693-442bba1a-89a3-11e7-95de-4cafc89974eb.png">
 
-While many React concepts can be found in Angular, you should be aware of quite a few architectutral differences from React to Angular. Here's a quick list of differences.
+While many React concepts can be found in Angular, there are quite a few architectural differences from React to Angular that you should be aware of.
 
 ## Design Differences
 
